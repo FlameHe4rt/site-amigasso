@@ -35,52 +35,16 @@
   </div>
 </nav>
 <!-- Fim navbar -->
-
-<?php
-$produtos = new \model\Produtos();
-$lanches = $produtos->fetchLanches();
-?>
 <div class="container">
-	<div class="page-header">
-		<h1>Cardápio</h1>
-	</div>
-	<table class="table">
-		<thead>
-			<tr>
-				<th>
-				Sanduíche
-				</th>
-				<th>
-				Ingredientes
-				</th>
-				<th>
-				Preço
-				</th>
-		</tr>
-		</thead>
-		<tbody>
-      <?php 
-        foreach($lanches as $lanche){
-          ?>
-        <tr>
-          <td><?php echo $lanche['nome'] ?></td>
-          <td><?php echo $lanche['ingredientes']?></td>
-          <td>R$ <?php echo $lanche['preco']?></td>
-          
-        </tr>
-          <?php
-        }
-      ?>
-		
-		</tbody>
-	</table>
+  
 </div>
+
 <div class="col-sm-6 footer text-right">Lanchonete Amigasso © 2017 - Todos os direitos reservados</div> <div class="col-sm-6 footer text-left">CNPJ nº 00.000.000/0000-00</div>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/main.js"></script>
   </body>
 </html>

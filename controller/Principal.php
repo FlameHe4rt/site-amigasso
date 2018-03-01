@@ -6,9 +6,13 @@ class Principal{
     public function index(){
         require("view/inicio.php");
     }
-    public function cardapio()
-    {
+    
+    public function cardapio(){
     	require ('view/cardapio.php');
+    }
+
+    public function pedido(){
+    	require ('view/pedido.php');
     }
 
 }

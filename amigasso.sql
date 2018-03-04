@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS sanduiches(
    	id int(2) AUTO_INCREMENT PRIMARY KEY,
    	nome varchar(60) NOT NULL,
    	ingredientes text NOT NULL,
-   	preco decimal(5,2) NOT NULL
+   	preco decimal(6,2) NOT NULL
 );
  
  CREATE TABLE IF NOT EXISTS bebidas(
@@ -51,3 +51,28 @@ CREATE TABLE IF NOT EXISTS sanduiches(
  	opcao varchar(40) NOT NULL,
  	valor int(2) NOT NULL
  );
+
+INSERT INTO sanduiches(nome, ingredientes, preco) VALUES
+('Hamburguer','Hamburguer, maionese, batata palha, catchup, mostarda', 6.00),
+('Bauru', 'Queijo, presunto, maionese, tomate, catchup, mostarda', 7.00),
+('Hot Dog', 'Salsicha, queijo, maionese, tomate, alface, batata palha, catchup, mostarda', 8.00),
+('X-Burguer','Hamburguer, queijo, maionese, batata palha, catchup, mostarda', 7.00),
+('X-Salada','Hamburguer, queijo, presunto, maionese, batata palha, catchup, mostarda', 8.00),
+('X-Egg','Hamburguer, queijo, presunto, ovo, maionese, tomate, alface, batata palha, catchup, mostarda', 9.00),
+('X-Calabresa', 'Hamburguer, queijo, presunto, calabresa, maionese, tomate, alface, batata palha, catchup, mostarda', 10.00),
+('X-Frango','Frango, queijo, presunto, maionese, tomate, alface, batata palha, catchup, mostarda', 10.00),
+('X-Bacon', 'Hamburguer, queijo, presunto, bacon, maionese, tomate, alface, batata palha, catchup, mostarda', 10.00),
+('X-Churrasco','Contra-filé, queijo, presunto, maionese, tomate, alface, batata palha, catchup, mostarda', 14.00),
+('X-Bacon Egg','Hamburguer, queijo, presunto, bacon, ovo, maionese, batata palha, catchup, mostarda', 12.00),
+('X-Amigasso','2 Hamburguers, queijo, presunto, ovo, bacon, calabresa, maionese, batata palha, catchup, mostarda', 14.00),
+('X-Tudo','Hamburguer, queijo, presunto, bacon, ovo, frango, calabresa, 2 salsichas, maionese, batata palha, catchup, mostarda', 22.00),
+('X-Picanha','Picanha, queijo, maionese, tomate, alface, batata palha, catchup, mostarda', 20.00),
+('X-Jitsu', '2 Hamburguers, queijo, presunto, calabresa, 3 ovos, maionese, tomate, catchup, mostarda', 35.00),
+('X-Mão de Vaca','3 Hamburguers, frango, queijo, presunto, bacon, 3 ovos, maionese, tomate, alface, batata palha, catchup, mostarda', 45.00),
+('X-Leg Lock','4 Hamburguers, frango, queijo, presunto, calabresa, salsicha, bacon, 3 ovos, maionese, chedar, batata palha, catchup, mostarda', 50.00),
+('X-Triângulo Voador', '5 Hamburguers, frango, queijo, presunto, calabresa, salsicha, bacon, 4 ovos, maionese, tomate, alface, batata palha, catchup, mostarda', 75.00),
+('X-Mata Leão','10 Hamburguers, contra-filé, lombinho, frango, queijo, presunto, calabresa, salsicha, bacon, 6 ovos, maionese, chedar, tomate, alface, batata palha, catchup, mostarda', 110.00),
+('X-Nocaute','15 Hamburguers, contra-filé, lombinho, frango, picanha, queijo, presunto, calabresa, salsicha, bacon, 8 ovos, chedar, catupiry, maionese, tomate, alface, batata palha, catchup, mostarda', 150.00),
+('X Nocaute a Revanche','20 Hamburguers, contra-filé, lombinho, frango, queijo, presunto, calabresa, salsicha, bacon, 10 ovos, chedar, catupiry, maionese, tomate, alface, batata palha, catchup, mostarda', 400.00),
+('X-UFC sem Limites','74 Hamburguers, contra-filé, lombinho, frango, queijo, presunto, calabresa, salsicha, bacon, 24 ovos, chedar, catupiry, maionese, tomate, alface, batata palha, catchup, mostarda', 800.00),
+('X-Tatame','130 Hamburguers, 1kg contra-filé, 1kg frango, 1kg bacon, 1kg calabresa, 1kg salsicha, 1kg queijo, 1kg presunto, chedar, catupiry, maionese, tomate, alface, batata palha, catchup, mostarda',1800.00)

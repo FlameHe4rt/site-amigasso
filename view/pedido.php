@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lanchonete Amigasso</title>
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
   </head>
   <body>
     <!-- navbar -->
@@ -36,7 +36,7 @@
 </nav>
 <!-- Fim navbar -->
 <div class="container">
-  
+
 </div>
 
 <div class="col-sm-6 footer text-right">Lanchonete Amigasso © 2017 - Todos os direitos reservados</div> <div class="col-sm-6 footer text-left">CNPJ nº 00.000.000/0000-00</div>

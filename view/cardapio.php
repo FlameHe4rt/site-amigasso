@@ -65,7 +65,7 @@ $lanches = $produtos->fetchLanches();
         <tr>
           <td><?php echo $lanche['nome'] ?></td>
           <td><?php echo $lanche['ingredientes']?></td>
-          <td>R$ <?php echo $lanche['preco']?></td>
+          <td>R$<?php echo $lanche['preco']?></td>
           
         </tr>
           <?php

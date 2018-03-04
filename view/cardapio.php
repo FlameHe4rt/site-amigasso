@@ -24,7 +24,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/site-amigasso/principal">Home</a></li>
         <li class="active"><a href="/site-amigasso/principal/cardapio">Cardápio</a></li>
-        <li><a href="/site-amigasso/principal/pedido/">Peça agora!</a></li>
+        <li><a href="/site-amigasso/principal/pedido">Peça agora!</a></li>
          <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Minha conta<span class="caret"></span></a>
           <ul class="dropdown-menu">

@@ -24,7 +24,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li class="active"><a href="/site-amigasso/principal">Home</a></li>
         <li><a href="/site-amigasso/principal/cardapio">Cardápio</a></li>
-        <li><a href="/site-amigasso/principal/pedido/">Peça agora!</a></li>
+        <li><a href="/site-amigasso/principal/pedido">Peça agora!</a></li>
          <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Minha conta<span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -65,11 +65,10 @@
     <div class="margin-top">
     <div class="col-sm-6">
       <h4><p>Um pouco sobre nós</p></h4>
-      lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non arcu at risus imperdiet congue et sit amet urna. Etiam egestas magna quis orci ornare eleifend. Donec eu fringilla nulla. Nunc efficitur a enim auctor accumsan. Maecenas pretium elit ante, nec hendrerit lectus vestibulum vel. Mauris sit amet aliquet sapien, eget laoreet turpis. Vivamus et nulla est. Aliquam lacinia eget elit eleifend fringilla
-    </div>    
+      lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non arcu at risus imperdiet congue et sit amet urna. Etiam egestas magna quis orci ornare eleifend. Donec eu fringilla nulla. Nunc efficitur a enim auctor accumsan. Maecenas pretium elit ante, nec hendrerit lectus vestibulum vel. Mauris sit amet aliquet sapien, eget laoreet turpis. Vivamus et nulla est. Aliquam lacinia eget elit eleifend fringilla    </div>    
     <div class="col-sm-6  right">
       <h4>Curta nossa pagina</h4>
-    <div class="fb-page" data-href="https://www.facebook.com/LanchoneteAmigassoDisk/" data-tabs="timeline" data-width="500" data-height="200" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/LanchoneteAmigassoDisk/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/LanchoneteAmigassoDisk/">Lanchonete Amigasso disk</a></blockquote></div>
+    <div class="fb-page" data-href="https://www.facebook.com/lanchoneteamigasso/" data-tabs="timeline" data-width="500" data-height="200" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/lanchoneteamigasso/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/lanchoneteamigasso/">Lanchonete Amigasso disk</a></blockquote></div>
     </div>
     </div>
     

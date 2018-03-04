@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS sanduiches(
  CREATE TABLE IF NOT EXISTS bebidas(
  	id int(2) AUTO_INCREMENT PRIMARY KEY,
  	nome varchar(50) NOT NULL,
- 	preco decimal(2,2) NOT NULL
+ 	preco decimal(5,2) NOT NULL
  );
 
  CREATE TABLE IF NOT EXISTS opcionais(
@@ -75,4 +75,25 @@ INSERT INTO sanduiches(nome, ingredientes, preco) VALUES
 ('X-Nocaute','15 Hamburguers, contra-filé, lombinho, frango, picanha, queijo, presunto, calabresa, salsicha, bacon, 8 ovos, chedar, catupiry, maionese, tomate, alface, batata palha, catchup, mostarda', 150.00),
 ('X Nocaute a Revanche','20 Hamburguers, contra-filé, lombinho, frango, queijo, presunto, calabresa, salsicha, bacon, 10 ovos, chedar, catupiry, maionese, tomate, alface, batata palha, catchup, mostarda', 400.00),
 ('X-UFC sem Limites','74 Hamburguers, contra-filé, lombinho, frango, queijo, presunto, calabresa, salsicha, bacon, 24 ovos, chedar, catupiry, maionese, tomate, alface, batata palha, catchup, mostarda', 800.00),
-('X-Tatame','130 Hamburguers, 1kg contra-filé, 1kg frango, 1kg bacon, 1kg calabresa, 1kg salsicha, 1kg queijo, 1kg presunto, chedar, catupiry, maionese, tomate, alface, batata palha, catchup, mostarda',1800.00)
+('X-Tatame','130 Hamburguers, 1kg contra-filé, 1kg frango, 1kg bacon, 1kg calabresa, 1kg salsicha, 1kg queijo, 1kg presunto, chedar, catupiry, maionese, tomate, alface, batata palha, catchup, mostarda',1800.00);
+
+INSERT INTO bebidas(nome, preco) VALUES
+('Muzzy Açaí',2.00),
+('Muzzy Guaraná Natural', 2.00),
+('Muzzy Guaraná com Ginseng e Açaí',2.00),
+('Muzzy Laranja com Acerola',2.00),
+('Muzzy Maracujá',2.00),
+('Coca-Cola Lata-350ML',4.00),
+('Coca-Cola Zero Lata-350ML',4.00),
+('Guaraná Antarctica Lata-350ML',4.00),
+('Guaraná Antarctica Zero Lata-350ML',4.00),
+('Sprite Lata-350ML',4.00),
+('Fanta Uva Lata-350ML',4.00),
+('Fanta Laranja Lata-350ML',4.00),
+('Fanta Guaraná Lata-350ML',4.00),
+('Aguá Tonica Lata-350ML',4.00),
+('Guaraná Mantiqueira 2L',7.00),
+('Coca-Cola 2L',10.00),
+('Fanta Uva 2L',10.00),
+('Fanta Laranja 2L',10.00),
+('Guaraná Antarctica 2L',10.00)

@@ -14,5 +14,8 @@ class Principal{
     public function pedido(){
     	require ('view/pedido.php');
     }
-
+    
+    public function cadastro(){
+        require ('view/cadastro.php');
+    }
 }

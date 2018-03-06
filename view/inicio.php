@@ -42,22 +42,32 @@
 <div class="container">
     <div class="row">
       <div class="col-sm-12">     
-          <h1>Produtos em destaque<h1>
-            <div class="col-sm-3">
-              <img src="assets/img/branco.jpg" class="img-thumbnail">
-              <h3>Nome Produto</h3>
+          <h1>Combos da semana<h1>
+            <div class="row">            
+            <div class="col-md-3 thumbnail text-center">
+            <img src="https://placehold.it/250x250" class="img-responsive">
+            <h4>Nome do combo</h4>
+            <h6>Conteudo do combo</h6>
+            <button class="btn btn-primary btn-sm ">Eu quero!</button><br>
             </div>
-            <div class="col-sm-3">
-              <img src="assets/img/branco.jpg" class="img-thumbnail">
-              <h3>Nome Produto</h3>
+            <div class="col-md-3 thumbnail text-center">
+            <img src="https://placehold.it/250x250" class="img-responsive">
+            <h4>Nome do combo</h4>
+            <h6>Conteudo do combo</h6>
+            <button class="btn btn-primary btn-sm ">Eu quero!</button><br>
             </div>
-            <div class="col-sm-3">
-              <img src="assets/img/branco.jpg" class="img-thumbnail">
-              <h3>Nome Produto</h3>
+            <div class="col-md-3 thumbnail text-center">
+            <img src="https://placehold.it/250x250" class="img-responsive">
+            <h4>Nome do combo</h4>
+            <h6>Conteudo do combo</h6>
+            <button class="btn btn-primary btn-sm ">Eu quero!</button><br>
             </div>
-            <div class="col-sm-3">
-              <img src="assets/img/branco.jpg" class="img-thumbnail">
-              <h3>Nome Produto</h3>
+            <div class="col-md-3 thumbnail text-center">
+            <img src="https://placehold.it/250x250" class="img-responsive">
+            <h4>Nome do combo</h4>
+            <h6>Conteudo do combo</h6>
+            <button class="btn btn-primary btn-sm ">Eu quero!</button><br>
+            </div>
             </div>
         </div>
         

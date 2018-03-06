@@ -24,7 +24,7 @@
 						<a href="/site-amigasso/principal/cardapio">Cardápio</a>
 					</li>
 					<li class="active">
-						<a href="/site-amigasso/principal/pedido">Peça agora!</a>
+						<a href="/site-amigasso/principal/pedidoa">Peça agora!</a>
 					</li>
 					<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Minha conta<span class="caret"></span></a>
@@ -43,80 +43,85 @@
 	</nav><!-- Fim navbar -->
 	<?php
 	$produtos = new \model\Produtos();
+	$lanches = $produtos->fetchLanches();
 	$bebidas = $produtos->fetchBebidas();
+
 	?>
 	<div class="container">
 		<div class="page-header">
-			<h1>Faça seu pedido!</h1>
+			<h1>Peça agora!</h1>
 		</div>
-		<div class="row">
-			<div class="col-sm-6">
-				<form action="" method="post">
-					<div class="form-group">
-					  <label for="lanche">Quais lanches deseja?</label>
-            <input placeholder="Ex: 2 X-Salada, X-Burguer..." class="form-control" id="lanche" name="lanche" type="text">
-					</div>
-          <div class="form-group">
-            <label for="obs">Observações:</label>
-            <textarea placeholder="Ex:Sem mostarda em 1 X-Salada..." class="form-control" rows="5" id="obs"></textarea>
+		<div class="col-md-8">
+			<div class="page-header">
+				<h1>Lanches</h1>
+			</div>
+      <div class="row">
+        <div class="lanches">
+          <?php foreach($lanches as $lanchinho){
+          	    $preco = str_replace(".",",", $lanchinho['preco']);
+          	?>
+
+          <div class="col-md-3 thumbnail text-center">
+            <img src="https://placehold.it/180x180" class="img-responsive">
+            <h4><?php echo $lanchinho['nome'] ?></h4>
+            <small data-toggle="popover" title="Ingredientes" data-placement="bottom" data-content="<?php echo $lanchinho['ingredientes'] ?>">Clique para ver os Ingredientes</small><br><br>
+            <small>R$: <?php echo $preco?></small> <button class="btn btn-primary btn-sm ">Eu quero!</button><br>
           </div>
-          <div class="form-group">
-          <label>Deseja beber algo?</label>
-          <div class="radio">
-            <label><input type="radio" name="optradio">Sim</label>
-          </div>
-          <div class="radio">
-            <label><input type="radio" name="optradio">Não</label>
-          </div>
-          <div class="col-md-6" hidden>
-				<h2>Bebidas</h2>
+          <?php } ?>
+        </div>
+      </div>
+		</div>
+		<div class="col-md-4">
+      <div class="page-header">
+				<h1>Meu Pedido</h1>
+			</div>
+			<table class="table">
+			  <thead>
+			    <tr>
+			      <td class="text-center">Item</td>
+			      <td class="text-center">Valor</td>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <td colspan="2" class="text-center">Não há produtos selecionados</td>
+			    </tr>
+			  </tbody>
+			</table>
+		</div>
+    <div class="col-md-8">
+			<div class="page-header">
+				<h1>Bebidas</h1>
+			</div>
 			<table class="table">
 				<thead>
-					<tr>
-						<th>Produtos</th>
-						<th>Valor</th>
-						<th>Quantidade</th>
-					</tr>
+				<tr>
+					<td>Refrigerantes</td>
+					<td>Sucos</td>
+					<td>Cervejas</td>
+				</tr>
 				</thead>
 				<tbody>
-					<?php
-					  foreach($bebidas as $bebida){
-					?>
-					<tr>
-						<td><?php echo $bebida['nome'] ?></td>
-						<td>R$<?php echo $bebida['preco']?></td>
-					</tr><?php
-					        }
-					      ?>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
 				</tbody>
 			</table>
 		</div>
-          <input type="submit" class="btn btn-success" value="Pedir!">
-				</form>
-			</div>
-		</div>
 	</div>
-  <div class="container">
-  <div class="margin-top">
-    <div class="col-sm-6">
-      <h4><p>Um pouco sobre nós</p></h4>
-      lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non arcu at risus imperdiet congue et sit amet urna. Etiam egestas magna quis orci ornare eleifend. Donec eu fringilla nulla. Nunc efficitur a enim auctor accumsan. Maecenas pretium elit ante, nec hendrerit lectus vestibulum vel. Mauris sit amet aliquet sapien, eget laoreet turpis. Vivamus et nulla est. Aliquam lacinia eget elit eleifend fringilla    </div>    
-    <div class="col-sm-6  right">
-      <h4>Curta nossa pagina</h4>
-    <div class="fb-page" data-href="https://www.facebook.com/lanchoneteamigasso/" data-tabs="timeline" data-width="500" data-height="200" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/lanchoneteamigasso/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/lanchoneteamigasso/">Lanchonete Amigasso disk</a></blockquote></div>
-    </div>
-    </div>
-    
-</div>
-</div>
-<div>]
-</div>
-<div class="col-sm-6 footer text-right">Lanchonete Amigasso © 2017 - Todos os direitos reservados</div> <div class="col-sm-6 footer text-left">CNPJ nº 00.000.000/0000-00</div>
-    </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/js/main.js"></script>
-  </body>
+	<div class="col-sm-12 footer text-center">
+		Lanchonete Amigasso © 2017 - Todos os direitos reservados<br>
+		CNPJ nº 00.000.000/0000-00
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script> <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script src="../assets/js/main.js">
+	</script>
+</body>
 </html>

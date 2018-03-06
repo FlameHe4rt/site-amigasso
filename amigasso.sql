@@ -53,6 +53,8 @@ CREATE TABLE IF NOT EXISTS sanduiches(
  );
 
 INSERT INTO sanduiches(nome, ingredientes, preco) VALUES
+('Misto','Queijo, presunto, maionese, batata palha, catchup, mostarda', 6.00),
+('Queijo Quente','Queijo, maionese, batata palha, catchup, mostarda', 6.00),
 ('Hamburguer','Hamburguer, maionese, batata palha, catchup, mostarda', 6.00),
 ('Bauru', 'Queijo, presunto, maionese, tomate, catchup, mostarda', 7.00),
 ('Hot Dog', 'Salsicha, queijo, maionese, tomate, alface, batata palha, catchup, mostarda', 8.00),
@@ -73,7 +75,7 @@ INSERT INTO sanduiches(nome, ingredientes, preco) VALUES
 ('X-Triângulo Voador', '5 Hamburguers, frango, queijo, presunto, calabresa, salsicha, bacon, 4 ovos, maionese, tomate, alface, batata palha, catchup, mostarda', 75.00),
 ('X-Mata Leão','10 Hamburguers, contra-filé, lombinho, frango, queijo, presunto, calabresa, salsicha, bacon, 6 ovos, maionese, chedar, tomate, alface, batata palha, catchup, mostarda', 110.00),
 ('X-Nocaute','15 Hamburguers, contra-filé, lombinho, frango, picanha, queijo, presunto, calabresa, salsicha, bacon, 8 ovos, chedar, catupiry, maionese, tomate, alface, batata palha, catchup, mostarda', 150.00),
-('X Nocaute a Revanche','20 Hamburguers, contra-filé, lombinho, frango, queijo, presunto, calabresa, salsicha, bacon, 10 ovos, chedar, catupiry, maionese, tomate, alface, batata palha, catchup, mostarda', 400.00),
+('X-Nocaute a Revanche','20 Hamburguers, contra-filé, lombinho, frango, queijo, presunto, calabresa, salsicha, bacon, 10 ovos, chedar, catupiry, maionese, tomate, alface, batata palha, catchup, mostarda', 400.00),
 ('X-UFC sem Limites','74 Hamburguers, contra-filé, lombinho, frango, queijo, presunto, calabresa, salsicha, bacon, 24 ovos, chedar, catupiry, maionese, tomate, alface, batata palha, catchup, mostarda', 800.00),
 ('X-Tatame','130 Hamburguers, 1kg contra-filé, 1kg frango, 1kg bacon, 1kg calabresa, 1kg salsicha, 1kg queijo, 1kg presunto, chedar, catupiry, maionese, tomate, alface, batata palha, catchup, mostarda',1800.00);
 
@@ -98,4 +100,4 @@ INSERT INTO bebidas(nome, preco) VALUES
 ('Fanta Laranja 2L',10.00),
 ('Guaraná Antarctica 2L',10.00),
 ('Cerveja Skol Lata-350ml',4.00),
-('Cerveja Itaipava Lata-350ml', 3.50)
+('Cerveja Itaipava Lata-350ml', 3.50);

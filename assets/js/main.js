@@ -8,9 +8,11 @@ $(document).ready(function(){
   fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
   //fim pagina
+  
+  //popover ingredientes
+  $('[data-toggle="popover"]').popover();
 
-
-
-
+  //mask
+  
 
 });

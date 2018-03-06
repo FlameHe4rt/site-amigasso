@@ -96,4 +96,6 @@ INSERT INTO bebidas(nome, preco) VALUES
 ('Coca-Cola 2L',10.00),
 ('Fanta Uva 2L',10.00),
 ('Fanta Laranja 2L',10.00),
-('Guaraná Antarctica 2L',10.00)
+('Guaraná Antarctica 2L',10.00),
+('Cerveja Skol Lata-350ml',4.00),
+('Cerveja Itaipava Lata-350ml', 3.50)

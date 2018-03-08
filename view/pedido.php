@@ -30,7 +30,7 @@
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Minha conta<span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li>
-								<a href="#"><span class="glyphicon glyphicon-user"></span> Cadastre-se</a>
+								<a href="/site-amigasso/principal/cadastro"><span class="glyphicon glyphicon-user"></span> Cadastre-se</a>
 							</li>
 							<li>
 								<a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a>
@@ -93,28 +93,18 @@
 			<div class="page-header">
 				<h1>Bebidas</h1>
 			</div>
-			<table class="table">
-				<thead>
-				<tr>
-					<td>Refrigerantes</td>
-					<td>Sucos</td>
-					<td>Cervejas</td>
-				</tr>
-				</thead>
-				<tbody>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-				</tbody>
-			</table>
+			<?php foreach($bebidas as $bebida){
+				$preco_bebida = str_replace(".",",",$bebida['preco']);
+			?>
+			<div class="col-md-3 thumbnail text-center">
+            <img src="https://placehold.it/180x180" class="img-responsive">
+            <h4><?php echo $bebida['nome'] ?></h4> 
+            <small>R$: <?php echo $preco_bebida?></small> <button class="btn btn-primary btn-sm ">Eu quero!</button><br>
+          </div>
+          <?php } ?>
 		</div>
 	</div>
-	<div class="col-sm-12 footer text-center">
-		Lanchonete Amigasso © 2017 - Todos os direitos reservados<br>
-		CNPJ nº 00.000.000/0000-00
-	</div>
+	<?php include "footer.php"  ?>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 	</script> <!-- Include all compiled plugins (below), or include individual files as needed -->

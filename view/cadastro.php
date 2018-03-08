@@ -28,7 +28,7 @@
          <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Minha conta<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Cadastre-se</a></li>
+            <li><a href="/site-amigasso/principal/cadastro"><span class="glyphicon glyphicon-user"></span> Cadastre-se</a></li>
             <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
           </ul>
         </li>
@@ -38,7 +38,9 @@
 <!-- Fim navbar -->
 <div class="container">
 <div class="col-sm-4">
-<div class="page-header"><h2>Cadastro</h2></div>
+<div class="page-header">
+  <h2>Cadastro</h2>
+</div>
 <form method="post" action="">
 	<div class="form-group">
 	<label for="nome">Nome</label>
@@ -61,14 +63,31 @@
 	<input class="btn btn-primary" type="submit" value="Cadastrar">
 </form>
 </div>
+<div class="col-sm-4">
+  <div class="page-header">
+    <h2>Ja possui cadastro?</h2>
 </div>
+  <form method="post" action="">
+  <div class="form-group">
+  <label for="email_log">E-mail</label>
+  <input placeholder="Digite seu email" class="form-control" type="text" name="email_log" id="email_log">  
+  </div>  
+  <div class="form-group">
+  <label for="senha_log">Senha</label>
+  <input placeholder="Digite sua senha" class="form-control" type="text" name="senha_log" id="senha_log">  
+  </div>  
+</form>
+</div>
+</div>
+
 <div  class="col-sm-12 footer text-center">
-		Lanchonete Amigasso © 2017 - Todos os direitos reservados<br>
+		Lanchonete Amigasso © 2019 - Todos os direitos reservados<br>
 		CNPJ nº 00.000.000/0000-00
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>

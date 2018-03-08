@@ -89,8 +89,7 @@ $lanches = $produtos->fetchLanches();
 </div>
 </div>
 <div>
-<div class="col-sm-6 footer text-right">Lanchonete Amigasso © 2017 - Todos os direitos reservados</div> <div class="col-sm-6 footer text-left">CNPJ nº 00.000.000/0000-00</div>
-    </div>
+<?php include "footer.php" ?>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

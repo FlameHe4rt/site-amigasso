@@ -35,22 +35,27 @@ CREATE TABLE IF NOT EXISTS sanduiches(
  CREATE TABLE IF NOT EXISTS opcionais(
  	id int(2) AUTO_INCREMENT PRIMARY KEY,
  	nome varchar(30) NOT NULL,
- 	preco decimal(2,2) NOT NULL
+ 	preco decimal(3,2) NOT NULL
  );
 
  CREATE TABLE IF NOT EXISTS pedidos(
  	id int(7) AUTO_INCREMENT PRIMARY KEY,
  	id_cliente int(5) NOT NULL,
  	status varchar(30) NOT NULL,
- 	valor decimal(5,2) NOT NULL
+ 	valor decimal(5,2) NOT NULL,
+	FOREIGN KEY(id_cliente) REFERENCES clientes(id)
  );
 
  CREATE TABLE IF  NOT EXISTS itens_pedido(
  	id int(7) AUTO_INCREMENT PRIMARY KEY,
  	id_pedido int(7) NOT NULL,
  	opcao varchar(40) NOT NULL,
- 	valor int(2) NOT NULL
+ 	valor int(2) NOT NULL,
+	FOREIGN KEY(id_pedido) REFERENCES pedidos(id)
  );
+
+SELECT c.nome, p.status, p.valor from clientes c join pedidos p on p.id_cliente = c.id WHERE p.id_cliente = 1
+SELECT p.id, p.id_cliente, p.valor from pedidos p join itens_pedido i on i.id_pedido = p.id WHERE i.id_cliente = 1
 
 INSERT INTO sanduiches(nome, ingredientes, preco) VALUES
 ('Misto','Queijo, presunto, maionese, batata palha, catchup, mostarda', 6.00),
@@ -80,24 +85,17 @@ INSERT INTO sanduiches(nome, ingredientes, preco) VALUES
 ('X-Tatame','130 Hamburguers, 1kg contra-filé, 1kg frango, 1kg bacon, 1kg calabresa, 1kg salsicha, 1kg queijo, 1kg presunto, chedar, catupiry, maionese, tomate, alface, batata palha, catchup, mostarda',1800.00);
 
 INSERT INTO bebidas(nome, preco) VALUES
-('Muzzy Açaí',2.00),
-('Muzzy Guaraná Natural', 2.00),
-('Muzzy Guaraná com Ginseng e Açaí',2.00),
-('Muzzy Laranja com Acerola',2.00),
-('Muzzy Maracujá',2.00),
+('Muzzy',2.00),
 ('Coca-Cola Lata-350ML',4.00),
 ('Coca-Cola Zero Lata-350ML',4.00),
 ('Guaraná Antarctica Lata-350ML',4.00),
 ('Guaraná Antarctica Zero Lata-350ML',4.00),
 ('Sprite Lata-350ML',4.00),
-('Fanta Uva Lata-350ML',4.00),
-('Fanta Laranja Lata-350ML',4.00),
-('Fanta Guaraná Lata-350ML',4.00),
+('Fanta Lata-350ML',4.00),
 ('Aguá Tonica Lata-350ML',4.00),
 ('Guaraná Mantiqueira 2L',7.00),
-('Coca-Cola 2L',10.00),
-('Fanta Uva 2L',10.00),
-('Fanta Laranja 2L',10.00),
 ('Guaraná Antarctica 2L',10.00),
+('Coca-Cola 2L',10.00),
+('Fanta 2L',10.00),
 ('Cerveja Skol Lata-350ml',4.00),
 ('Cerveja Itaipava Lata-350ml', 3.50);

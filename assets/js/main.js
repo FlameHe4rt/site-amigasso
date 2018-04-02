@@ -15,5 +15,24 @@ $(document).ready(function(){
   //mask
   $("#cpf").mask('000.000.000-00');
   $("#telefone").mask('(00) 0000-0000');
+  $("#login-btn").click(function(){
+    console.log(1)
+    
+  })
 
 });
+
+$("#login-btn").on("click",function(){
+  $("#login-modal").modal("toggle");
+})
+
+$("#register-btn").on("click", function(){
+  $("#register-modal").modal("toggle");
+})
+
+$("#register-modal").on("submit", function(e){
+  e.preventDefault();
+  $.post("../usuario/registrar",$(this).serialize(),function(data){
+    console.log(data)
+  })
+})

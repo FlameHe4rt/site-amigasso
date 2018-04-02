@@ -7,9 +7,10 @@
     foreach(glob("model/*.php") as $key){
         include($key);
     }
-
+    
     use \controller as controller;
     use \model as model;
+    require("config-def.php");
     
     
     $tmp = !empty($_GET['uri']) ? $_GET['uri'] : 'principal'; // Página padrão home
@@ -19,20 +20,9 @@
     $vars = array(
         'controller'   => (count($uri) > 0 ? array_shift($uri) : 'index'),
         'action'       => (count($uri) > 0 ? array_shift($uri) : 'index'),
-        'params'       => array()
+        'params'       => (count($uri) > 0 ? array_shift($uri) : null)
     );
     
-    $key = NULL;
-    if (count($uri) > 1){
-        foreach ($uri as $val) {
-            if (is_null($key))
-                $key = $val;
-            else {
-                $vars['params'][$key] = $val;
-                $key = NULL;
-            }
-        }
-    }
     $rota = 'controller\\'.ucfirst($vars['controller']).'::'.$vars['action'];
     
     if(method_exists('controller\\'.ucfirst($vars['controller']),$vars['action'])){
